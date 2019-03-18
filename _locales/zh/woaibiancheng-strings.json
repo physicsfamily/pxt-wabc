@@ -1,5 +1,0 @@
-{
-	"woaibiancheng.Servo|block": "设置舵机 %channel|角度 %degree",
-	"woaibiancheng.ServoPulse|block": "设置舵机 %channel|脉宽 %pulse",
-	"woaibiancheng.Illuminance|block": "读取照度传感器的值"
-}

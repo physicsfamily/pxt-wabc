@@ -12,5 +12,5 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-woaibiancheng=github.com/physicsfamily/pxt-woaibiancheng
+wabc=github.com/physicsfamily/pxt-wabc
 ```
