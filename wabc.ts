@@ -119,8 +119,8 @@ namespace wabc {
     //% blockId=woaibiancheng_ill block="get Illuminance"
     //% weight=99
     export function Illuminance(): number {
-        pins.i2cWriteNumber(35, 1, NumberFormat.UInt8BE, false);
-        pins.i2cWriteNumber(35, 16, NumberFormat.UInt8BE, false);
+        //pins.i2cWriteNumber(35, 1, NumberFormat.UInt8BE, false);
+        //pins.i2cWriteNumber(35, 16, NumberFormat.UInt8BE, false);
         let y = pins.i2cReadNumber(35, NumberFormat.UInt16BE, false);
         return Math.round (y / 1.2);
     }
