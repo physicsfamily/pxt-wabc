@@ -1,0 +1,19 @@
+{
+    "name": "woaibiancheng",
+    "version": "0.0.1",
+    "description": "Extension for woaibiancheng",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:physicsfamily/pxt-neopixel.git"
+    },
+    "files": [
+        "README.md",
+        "woaibiancheng.ts",
+        "_locales/zh/woaibiancheng-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
