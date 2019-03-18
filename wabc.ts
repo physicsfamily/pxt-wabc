@@ -1,5 +1,5 @@
 
-//% weight=5 color=#0fbc11 icon="\uf1b3"
+//% weight=120 color=#0fbc11 icon="\uf1b3"
 namespace wabc {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
@@ -116,12 +116,17 @@ namespace wabc {
         setPwm(channel, 0, value);
     }
 
-    //% blockId=woaibiancheng_ill block="get Illuminance"
-    //% weight=99
+    //% blockId=wabc_ill block="get Illuminance"
+    //% weight=999
     export function Illuminance(): number {
-        //pins.i2cWriteNumber(35, 1, NumberFormat.UInt8BE, false);
-        //pins.i2cWriteNumber(35, 16, NumberFormat.UInt8BE, false);
         let y = pins.i2cReadNumber(35, NumberFormat.UInt16BE, false);
         return Math.round (y / 1.2);
+    }
+
+    //% blockId=wabc_infrared block="Human infrared sensor detects people"
+    //% weight=888
+    export function HumanBodyDetected(): boolean {
+        let y = pins.i2cReadNumber(36, NumberFormat.UInt8BE, false);
+        return (y==1);
     }
 }
