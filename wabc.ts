@@ -1,5 +1,5 @@
 
-//% weight=88 color=#0fbc11 icon="\uf1b3"
+//% weight=80 color=#0fbc11 icon="\uf1b3"
 namespace wabc {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
