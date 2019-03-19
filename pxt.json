@@ -1,7 +1,7 @@
 {
     "name": "wabc",
     "version": "0.0.1",
-    "description": "Extension for woaibiancheng",
+    "description": "Extension for wab woaibiancheng",
     "license": "MIT",
     "dependencies": {
         "core": "*",
