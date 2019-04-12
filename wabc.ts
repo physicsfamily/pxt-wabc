@@ -181,7 +181,7 @@ namespace wabc {
     //% blockId=wabc_sound block="Sound sensor detects sound"
     //% weight=889
     export function SoundDetected(): boolean {
-        let y = pins.i2cReadNumber(37, NumberFormat.UInt8BE, false);
+        let y = pins.i2cReadNumber(18, NumberFormat.UInt8BE, false);
         return (y==1);
     }
 
