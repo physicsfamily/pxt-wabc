@@ -175,6 +175,15 @@ namespace wabc {
         let y = pins.i2cReadNumber(36, NumberFormat.UInt8BE, false);
         return (y==1);
     }
+   /**
+    * 声音传感器检测到声音
+    */
+    //% blockId=wabc_sound block="Sound sensor detects sound"
+    //% weight=889
+    export function SoundDetected(): boolean {
+        let y = pins.i2cReadNumber(37, NumberFormat.UInt8BE, false);
+        return (y==1);
+    }
 
     //% blockId=wabc_fan block="Change Fan Speed|%index|"
     //% weight=80
