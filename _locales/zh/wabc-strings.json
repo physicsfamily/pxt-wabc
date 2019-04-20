@@ -1,6 +1,4 @@
 {
-	"wabc.Servo|block": "设置舵机 %channel|角度 %degree",
-	"wabc.ServoPulse|block": "设置舵机 %channel|脉宽 %pulse",
 	"wabc.Illuminance|block": "读取照度传感器的值",
 	"wabc.HumanBodyDetected|block": "人体红外传感器检测到人",
 	"wabc.SoundDetected|block": "检测到声音",
